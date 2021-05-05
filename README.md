@@ -19,4 +19,4 @@ Para poder ejecutar el ejemplo de MQTT, realizar los siguientes pasos
 5. Compilar en una ESP32
 
 
-# Autor: Reinner Steven Daza Leiva
+### Autor: Reinner Steven Daza Leiva
