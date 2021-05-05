@@ -17,3 +17,6 @@ Para poder ejecutar el ejemplo de MQTT, realizar los siguientes pasos
 3. Agregar las librerias utilizada. para visualizar las librerias utilizadas, ver el archivo platformio.ini, en este se encuentra las librerias utilizadas en el proyecto
 4. Actualizar credenciales para el aplicativo
 5. Compilar en una ESP32
+
+
+# Autor: Reinner Steven Daza Leiva
