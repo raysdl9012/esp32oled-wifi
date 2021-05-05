@@ -41,17 +41,14 @@ void setup()
 //****************************************
 void loop()
 {
-  // put your main code here, to run repeatedly:
-  digitalWrite(LED_OUTPUT, HIGH);
-  delay(2000);
-  digitalWrite(LED_OUTPUT, LOW);
-  delay(2000);
 
   if (WiFi.isConnected())
   {
     Serial.println("Connected WiFi");
-    delay(2000);
+    Serial.print('IP Network: ');
     Serial.println(WiFi.localIP().toString());
+    digitalWrite(LED_OUTPUT, HIGH);
+
   }
   else
   {
@@ -59,6 +56,7 @@ void loop()
     scanNetworkWiFi();
     // Conectar a una red predeterminada
     connectNetworkWiFi();
+    digitalWrite(LED_OUTPUT, LOW);
   }
 }
 
