@@ -3,7 +3,7 @@
  * */
 #include <Arduino.h>
 #include <WiFi.h>
-#include "SSD1306Wire.h"
+
 
 /**
  * Definir variables
@@ -100,7 +100,7 @@ void scanNetworkWiFi()
   {
     String encryptionTypeDescription = translateEncryptionType(WiFi.encryptionType(i));
     //String nameNetwork = WiFi.SSID(i) + "\n" + WiFi.RSSI(i) + "\n" + WiFi.channel(i)  + "\n" + encryptionTypeDescription;
-    String nameNetwork = WiFi.SSID(i) + "\n" + encryptionTypeDescription;
+    String nameNetwork = WiFi.SSID(i) + "-" + encryptionTypeDescription;
     Serial.println(nameNetwork);
     delay(3000);
   }
